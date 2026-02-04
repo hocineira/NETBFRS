@@ -275,15 +275,21 @@ section {
     box-shadow: 0 8px 20px rgba(0, 102, 204, 0.3);
 }
 
-.btn-hero-new i {
-    font-size: 24px;
-    color: var(--accent-color);
+.btn-hero-new .btn-logo-img {
+    height: 28px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
 }
 
 .btn-hero-new:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 30px rgba(0, 168, 232, 0.5);
     background: linear-gradient(135deg, #0052a3 0%, #003d7a 100%);
+}
+
+.btn-hero-new:hover .btn-logo-img {
+    transform: scale(1.1);
 }
 
 /* Keep old hero button style for backward compatibility */
