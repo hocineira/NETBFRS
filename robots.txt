@@ -1,0 +1,6 @@
+# NETBFRS Académie - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://netbfrs.fr/sitemap.xml
