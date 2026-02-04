@@ -136,7 +136,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--gradient-dark);
+    background: #ffffff;
     overflow: hidden;
 }
 
@@ -162,7 +162,7 @@ section {
     position: relative;
     z-index: 2;
     text-align: center;
-    color: var(--bg-white);
+    color: #1a1a1a;
     max-width: 800px;
     padding: 20px;
 }
