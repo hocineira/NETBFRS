@@ -276,10 +276,11 @@ section {
 }
 
 .btn-hero-new .btn-logo-img {
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     object-fit: contain;
     transition: transform 0.3s ease;
+    filter: brightness(0) invert(1);
 }
 
 .btn-hero-new:hover {
