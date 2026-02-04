@@ -61,6 +61,18 @@ section {
     padding: 1rem 20px;
 }
 
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
 .nav-brand h1 {
     font-size: 28px;
     background: var(--gradient-primary);
