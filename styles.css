@@ -275,12 +275,9 @@ section {
     box-shadow: 0 8px 20px rgba(0, 102, 204, 0.3);
 }
 
-.btn-hero-new .btn-logo-img {
-    height: 40px;
-    width: 40px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-    filter: brightness(0) invert(1);
+.btn-hero-new i {
+    font-size: 24px;
+    color: var(--accent-color);
 }
 
 .btn-hero-new:hover {
@@ -289,8 +286,34 @@ section {
     background: linear-gradient(135deg, #0052a3 0%, #003d7a 100%);
 }
 
-.btn-hero-new:hover .btn-logo-img {
-    transform: scale(1.1);
+/* Image Button Links */
+.btn-image-link {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.btn-image {
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.btn-image-link:hover .btn-image {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
+}
+
+@media (max-width: 768px) {
+    .btn-image {
+        width: 200px;
+        height: 80px;
+    }
 }
 
 /* Keep old hero button style for backward compatibility */
