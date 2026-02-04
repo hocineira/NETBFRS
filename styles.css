@@ -167,6 +167,28 @@ section {
     padding: 20px;
 }
 
+.hero-logo-large {
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease;
+}
+
+.hero-main-logo {
+    width: 280px;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 102, 204, 0.3));
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
 .hero-title {
     font-size: 4rem;
     font-weight: 700;
@@ -235,6 +257,36 @@ section {
 }
 
 /* Hero Buttons with Logos */
+.btn-hero-new {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-width: 200px;
+    padding: 18px 32px;
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: var(--bg-white);
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: 0 8px 20px rgba(0, 102, 204, 0.3);
+}
+
+.btn-hero-new i {
+    font-size: 24px;
+    color: var(--accent-color);
+}
+
+.btn-hero-new:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 168, 232, 0.5);
+    background: linear-gradient(135deg, #0052a3 0%, #003d7a 100%);
+}
+
+/* Keep old hero button style for backward compatibility */
 .btn-hero {
     display: inline-flex;
     align-items: center;
